@@ -6,8 +6,8 @@
 <meta name="robots" content="noindex, nofollow" data-podglad>
 <title>Domy z keramzytu w 8 tygodni - projekty i ceny | LIKON Kraków</title>
 <meta name="description" content="LIKON buduje parterowe domy z prefabrykatów keramzytowych w systemie Praefa. 13 projektów z cenami od 488 200 zł brutto, projekt bez opłat, jedna ekipa od płyty fundamentowej po instalacje.">
-<meta property="og:title" content="LIKON - &quot;tradycyjne&quot; domy w 8 tygodni">
-<meta property="og:description" content="Parterowe domy z keramzytu w systemie Praefa. Projekty i ceny, budowa krok po kroku, doradcy regionalni.">
+<meta property="og:title" content="Domy z keramzytu w 8 tygodni - projekty i ceny | LIKON Kraków">
+<meta property="og:description" content="LIKON buduje parterowe domy z prefabrykatów keramzytowych w systemie Praefa. 13 projektów z cenami od 488 200 zł brutto, projekt bez opłat, jedna ekipa od płyty fundamentowej po instalacje.">
 <meta property="og:image" content="img/hero-1280.webp">
 <meta name="theme-color" content="#1B2654">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='20 36 100 46'%3E%3Cpath d='M33 45 69 51 96 41 87 50 78 60 69 70 58 77 43 78.5 55 64 42 63.5 35 47Z' fill='%231B2654'/%3E%3Cpath d='M96.6 46 115.6 78.4' stroke='%23991E3E' stroke-width='4'/%3E%3C/svg%3E">
@@ -310,27 +310,133 @@ footer .dol{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,2
  footer{padding-bottom:96px}
 }
 
-.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
-.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
-.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
-.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
-.wylinka-badge b{font-weight:600}
-.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
-.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
-.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
-.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
-@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+
+.top .logo{color:var(--m)}
+/* nagłówek podstrony: granatowy pas zakończony skosem dachu */
+.ph{background:var(--g);color:#DCE0EE;padding:clamp(40px,4.4vw,72px) 0 0;position:relative}
+.ph .wrap{position:relative;z-index:1;padding-bottom:clamp(56px,6vw,96px)}
+.ph h1{color:#fff;font-size:clamp(34px,3.6vw,62px);font-stretch:115%;max-width:17em}
+.ph .lead{color:#C3C9DE;margin-top:18px}
+.ph .skos{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:clamp(34px,4.4vw,72px);display:block}
+.okr{display:flex;flex-wrap:wrap;gap:6px 10px;font-size:15px;margin:0 0 22px;padding:0;list-style:none;color:#AEB5CF}
+.okr a{color:#DCE0EE;text-decoration:none}.okr a:hover{color:#fff;text-decoration:underline}
+.okr li+li::before{content:"/";margin-right:10px;color:#6F789A}
+.ph+section{padding-top:clamp(40px,4vw,72px)}
+@media(max-width:700px){.ph .wrap{padding-bottom:46px}.ph+section{padding-top:30px}.ph h1{font-size:clamp(30px,8vw,40px)}}
+.ph-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+/* karty: zdjęcie i tytuł prowadzą do podstrony projektu */
+a.zdj{cursor:pointer}
+.proj h3 a{color:inherit;text-decoration:none}
+.proj h3 a:hover{color:var(--k)}
+.proj .zap{display:inline-flex;gap:8px}
+/* podstrona projektu */
+.pp{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:clamp(28px,3.4vw,64px);align-items:start}
+.gal-gl{display:block;width:100%;padding:0;border:0;background:var(--l);cursor:zoom-in;border-radius:3px;overflow:hidden}
+.gal-gl img{width:100%;height:auto}
+.gal-mini{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}
+.gal-mini button{padding:0;border:2px solid transparent;background:var(--l);cursor:pointer;border-radius:3px;overflow:hidden;aspect-ratio:3/2}
+.gal-mini button.on{border-color:var(--k)}
+.gal-mini img{width:100%;height:100%;object-fit:cover}
+.gal-mini .rz img{object-fit:contain;background:#fff}
+.karta{background:#fff;border-radius:3px;padding:clamp(22px,2.2vw,36px);box-shadow:0 1px 0 var(--l),0 14px 40px rgba(27,38,84,.08);border-top:3px solid var(--g);position:sticky;top:100px}
+.karta .pok{font-size:17px;color:var(--m)}
+.karta dl{margin:18px 0 0;padding:0;border-top:1px solid var(--l)}
+.karta dl div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--l)}
+.karta dt{color:var(--m);font-size:16px}
+.karta dd{margin:0;font-weight:700;font-size:17px;text-align:right}
+.karta .cena{margin-top:22px}
+.karta .cena b{display:block;font:700 clamp(32px,2.6vw,42px)/1.1 Archivo,"Archivo fb",Arial,sans-serif;font-stretch:112%;color:var(--g);position:relative;padding-top:32px}
+.karta .cena b::before{content:"";position:absolute;left:0;top:24px;width:52px;height:3px;background:var(--k);transform:rotate(-30deg);transform-origin:0 0}
+.karta .cena span{font-size:15px;color:var(--m)}
+.karta .akcje{display:grid;gap:10px;margin-top:24px}
+.karta .akcje .btn{width:100%}
+.btn.g{background:var(--g)}.btn.g:hover{background:var(--gj)}
+.btn.o{background:#fff;color:var(--g);box-shadow:inset 0 0 0 2px var(--g)}.btn.o:hover{background:var(--tlo)}
+.karta .uw{font-size:14px;color:var(--m);margin-top:16px}
+@media(max-width:1000px){.pp{grid-template-columns:1fr}.karta{position:static}}
+.opis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,2.4vw,40px);margin-top:44px}
+.opis div{border-top:3px solid var(--g);padding-top:18px}
+.opis h3{font-size:clamp(19px,1.3vw,22px)}
+.opis p{margin-top:10px;color:var(--m);font-size:17px}
+@media(max-width:900px){.opis{grid-template-columns:1fr}}
+/* tekst długi */
+.tekst{max-width:780px}
+.tekst h2{font-size:clamp(26px,2.2vw,36px);margin:48px 0 16px}
+.tekst h2:first-child{margin-top:0}
+.tekst p{margin:0 0 16px;font-size:18px}
+.tekst ul{margin:0 0 16px;padding-left:22px}
+.tekst li{margin:6px 0}
+.dwie{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,96px);align-items:start}
+.dwie figure{margin:0}.dwie figure img{width:100%;border-radius:2px}
+.dwie figcaption{font-size:15px;color:var(--m);margin-top:10px}
+@media(max-width:900px){.dwie{grid-template-columns:1fr}}
+/* zalety: numerowana siatka */
+.zalety{list-style:none;padding:0;margin:44px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 clamp(24px,3vw,56px);counter-reset:z}
+.zalety li{counter-increment:z;padding:26px 0 28px;border-top:1px solid #C9CFDD;position:relative}
+.zalety li::before{content:counter(z,decimal-leading-zero);display:block;font:700 34px/1 Archivo,"Archivo fb",Arial,sans-serif;font-stretch:118%;color:var(--k);margin-bottom:14px}
+.zalety h3{font-size:clamp(20px,1.4vw,23px)}
+.zalety p{margin-top:10px;color:var(--m);font-size:17px}
+@media(max-width:1100px){.zalety{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.zalety{grid-template-columns:1fr}}
+/* porównanie */
+.por{margin-top:40px;border-top:2px solid var(--g)}
+.por>div{display:grid;grid-template-columns:minmax(150px,.7fr) 1fr 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--l)}
+.por .nag{font:700 15px Archivo,"Archivo fb",Arial,sans-serif;font-stretch:108%;color:var(--m);padding:14px 0}
+.por b{font-family:Archivo,"Archivo fb",Arial,sans-serif;color:var(--g);font-size:18px}
+.por .k{color:var(--t)}.por .m{color:var(--m)}
+@media(max-width:760px){.por>div{grid-template-columns:1fr;gap:4px}.por .nag{display:none}.por .k::before{content:"Keramzyt: ";font-weight:700;color:var(--k)}.por .m::before{content:"Murowany: ";font-weight:700}}
+/* etapy budowy - pełne */
+.etapy{list-style:none;padding:0;margin:0;counter-reset:e}
+.etapy>li{display:grid;grid-template-columns:clamp(84px,9vw,150px) minmax(0,1fr);gap:clamp(20px,3vw,56px);padding:clamp(28px,3vw,44px) 0;border-top:1px solid var(--l)}
+.etapy .nr{font:700 clamp(46px,5vw,84px)/.9 Archivo,"Archivo fb",Arial,sans-serif;font-stretch:118%;color:var(--g);position:relative}
+.etapy .nr::after{content:"";display:block;width:44px;height:3px;background:var(--k);transform:rotate(-30deg);transform-origin:0 0;margin-top:22px}
+.etapy .kiedy{display:inline-block;font-size:14px;font-weight:600;color:var(--g);background:var(--tlo);padding:3px 10px;border-radius:2px;margin-bottom:10px}
+.etapy h2{font-size:clamp(24px,2vw,32px)}
+.etapy p{margin-top:12px;max-width:52em;color:var(--m)}
+.etapy ul{margin:12px 0 0;padding-left:20px;color:var(--m)}
+.etapy li li{margin:4px 0}
+@media(max-width:600px){.etapy>li{grid-template-columns:1fr;gap:8px}.etapy .nr::after{display:none}}
+/* realizacje: większe karty */
+.real{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,2.4vw,36px);margin-top:44px}
+.real .opinia .zdj{aspect-ratio:auto}
+.real .opinia .zdj img{height:auto}
+@media(max-width:900px){.real{grid-template-columns:1fr}}
+.pas-cta{background:var(--tlo);padding:clamp(48px,5vw,80px) 0}
+.pas-cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.pas-cta h2{font-size:clamp(26px,2.4vw,40px);max-width:20em}
+.pas-cta p{color:var(--m);margin-top:10px;max-width:40em}
+.pas-cta .ph-cta{margin-top:0}
+.wiecej-l{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+.faq-full{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}
+.faq h2.gr{font-size:clamp(22px,1.7vw,28px);margin:40px 0 4px}
+.faq h2.gr:first-child{margin-top:0}
+.mapa{position:relative}
+.mapa .zg{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;padding:24px;font-size:16px}
+.mapa .zg .btn{background:var(--g)}
+.doradcy-d{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,2.4vw,36px);margin-top:40px}
+.doradcy-d>div{background:#fff;border-top:3px solid var(--g);padding:24px 26px 26px;border-radius:3px;box-shadow:0 1px 0 var(--l),0 12px 32px rgba(27,38,84,.07)}
+.doradcy-d h3{font-size:clamp(20px,1.4vw,23px)}
+.doradcy-d a{display:block;margin-top:10px;font-weight:700;color:var(--g);text-decoration:none;font-size:18px}
+.doradcy-d a:hover{color:var(--k)}
+.doradcy-d p{color:var(--m);font-size:16px;margin-top:6px}
+@media(max-width:900px){.doradcy-d{grid-template-columns:1fr}}
+.cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;max-width:760px;margin:0 auto;background:#fff;border-top:3px solid var(--g);border-radius:3px;box-shadow:0 18px 50px rgba(18,26,61,.25);padding:16px 18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:15px;line-height:1.45}
+.cookies[hidden]{display:none}
+.cookies p{flex:1 1 300px}
+.cookies .btn{min-height:44px;padding:0 18px;font-size:15px}
+.cookies a{color:var(--g)}
+@media(max-width:860px){.cookies{bottom:76px}}
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M6.6 3.5 9 3l1.6 4.3-2 1.4a12 12 0 0 0 6.7 6.7l1.4-2L21 15l-.5 2.4A3 3 0 0 1 17.6 20 15 15 0 0 1 4 6.4a3 3 0 0 1 2.6-2.9Z"/></symbol>
 </svg>
-
 <div class="info-bar"><div class="wrap"><i aria-hidden="true"></i><span><b>Projekt domu bez opłat</b><span class="dl"> - z naszej oferty albo indywidualny</span></span></div></div>
 <header class="top">
  <div class="wrap">
-  <a class="logo" href="#start" aria-label="LIKON - domy z keramzytu, strona główna"><svg class="logo-svg" viewBox="16 38 114 70" role="img" aria-hidden="true">
+  <a class="logo" href="index.html" aria-label="LIKON - domy z keramzytu, strona główna"><svg class="logo-svg" viewBox="16 38 114 70" role="img" aria-hidden="true">
  <path d="M33 45 69 51 96 41 87 50 78 60 69 70 58 77 43 78.5 55 64 42 63.5 35 47Z" fill="#1B2654"/>
  <path d="M31 49h2.6l-2 19H27Z" fill="#1B2654"/>
  <path d="M30 74l1 3.6-6 3-2-1.2Z" fill="#1B2654"/>
@@ -339,13 +445,13 @@ footer .dol{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,2
 </svg><small>„tradycyjne” domy w 8 tygodni</small></a>
   <button class="mb" aria-expanded="false" aria-controls="menu">Menu <i></i></button>
   <nav class="nav" id="menu">
-   <a href="#projekty">Projekty i ceny</a>
-   <a href="#technologia">Technologia</a>
-   <a href="#budowa">Jak budujemy</a>
-   <a href="#opinie">Realizacje</a>
-   <a href="#pytania">Pytania</a>
-   <a href="#kontakt">Kontakt</a>
-   <a class="wyc" href="#kontakt" data-wyc>Zapytaj o wycenę</a>
+   <a href="projekty.html">Projekty i ceny</a>
+   <a href="technologia-praefa.html">Technologia</a>
+   <a href="budowa-krok-po-kroku.html">Jak budujemy</a>
+   <a href="realizacje.html">Realizacje</a>
+   <a href="pytania-i-odpowiedzi.html">Pytania</a>
+   <a href="kontakt.html">Kontakt</a>
+   <a class="wyc" href="kontakt.html#zapytanie">Zapytaj o wycenę</a>
    <a class="tel" href="tel:+48503781593"><svg><use href="#i-tel"/></svg>503 781 593</a>
   </nav>
  </div>
@@ -363,14 +469,13 @@ footer .dol{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,2
    <h1>„Tradycyjne” domy z keramzytu w 8 tygodni</h1>
    <p>Parterowe domy w systemie Praefa. Ściany przyjeżdżają gotowe z fabryki, a jedna ekipa prowadzi budowę od płyty fundamentowej po instalacje. Projekt przygotowujemy bez opłat.</p>
    <div class="cta">
-    <a class="btn" href="#projekty">Projekty i ceny</a>
+    <a class="btn" href="projekty.html">Projekty i ceny</a>
     <a class="btn b" href="tel:+48503781593"><svg><use href="#i-tel"/></svg>503 781 593</a>
    </div>
    <p class="fot">Na zdjęciu wizualizacja projektu <b>Likon 99</b>: 99 m², od 488 200 zł brutto</p>
   </div>
  </div>
 </section>
-
 
 <section class="szara" id="projekty">
  <div class="wrap">
@@ -380,6 +485,7 @@ footer .dol{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,2
     <h2>Projekty i ceny</h2>
     <p class="lead">13 projektów domów parterowych, od 99 do 145 m². Cena brutto obejmuje prace budowlane według zakresu z karty projektu. Każdy projekt można dopasować albo zamówić indywidualny.</p>
    </div>
+   <a class="btn g" href="projekty.html">Wszystkie projekty</a>
   </div>
   <form class="szukaj" id="szukaj" aria-label="Wyszukiwarka projektów" onsubmit="return false">
    <label>Powierzchnia<select name="m"><option value="">wszystkie</option><option value="0-106">do 105 m²</option><option value="106-121">106 - 120 m²</option><option value="121-999">ponad 120 m²</option></select></label>
@@ -389,137 +495,137 @@ footer .dol{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,2
   </form>
   <div class="siatka" id="siatka">
    <article class="proj" data-m="99" data-s="3" data-styl="klas">
-    <button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/p99-1-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 99 - wizualizacja od frontu&quot;}, {&quot;src&quot;: &quot;img/p99-2-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 99 - wizualizacja, druga strona domu&quot;}, {&quot;src&quot;: &quot;img/p99-rzut.webp&quot;, &quot;alt&quot;: &quot;Likon 99 - rzut i wymiary&quot;}]" aria-label="Likon 99: 2 wizualizacje + rzut, powiększ"><img src="img/p99-1-640.webp" srcset="img/p99-1-640.webp 640w, img/p99-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 99 - wizualizacja domu" loading="lazy"><span>2 wizualizacje + rzut</span></button>
+    <a class="zdj" href="projekt-likon-99.html" aria-label="Likon 99 - zobacz projekt"><img src="img/p99-1-640.webp" srcset="img/p99-1-640.webp 640w, img/p99-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 99 - wizualizacja domu" loading="lazy"><span>wizualizacje i rzut</span></a>
     <div class="tx">
-     <h3>Likon 99</h3>
+     <h3><a href="projekt-likon-99.html">Likon 99</a></h3>
      <p class="pok">salon + 3 sypialnie</p>
      <dl><div><dt>pow. netto</dt><dd>99 m²</dd></div><div><dt>pow. zabudowy</dt><dd>117 m²</dd></div><div><dt>min. działka</dt><dd>20,1 x 13,75 m</dd></div><div><dt>dach</dt><dd>30°</dd></div></dl>
      <div class="cena"><b>488 200 zł</b><span>brutto, prace budowlane</span></div>
-     <a class="zap" href="#kontakt" data-projekt="Likon 99">Zapytaj o ten projekt</a>
+     <a class="zap" href="projekt-likon-99.html">Zobacz projekt <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
    </article>
    <article class="proj" data-m="100.7" data-s="3" data-styl="klas">
-    <button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/p100-1-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 100 - wizualizacja od frontu&quot;}, {&quot;src&quot;: &quot;img/p100-2-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 100 - wizualizacja, druga strona domu&quot;}, {&quot;src&quot;: &quot;img/p100-rzut.webp&quot;, &quot;alt&quot;: &quot;Likon 100 - rzut i wymiary&quot;}]" aria-label="Likon 100: 2 wizualizacje + rzut, powiększ"><img src="img/p100-1-640.webp" srcset="img/p100-1-640.webp 640w, img/p100-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 100 - wizualizacja domu" loading="lazy"><span>2 wizualizacje + rzut</span></button>
+    <a class="zdj" href="projekt-likon-100.html" aria-label="Likon 100 - zobacz projekt"><img src="img/p100-1-640.webp" srcset="img/p100-1-640.webp 640w, img/p100-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 100 - wizualizacja domu" loading="lazy"><span>wizualizacje i rzut</span></a>
     <div class="tx">
-     <h3>Likon 100</h3>
+     <h3><a href="projekt-likon-100.html">Likon 100</a></h3>
      <p class="pok">salon + 3 sypialnie</p>
      <dl><div><dt>pow. netto</dt><dd>100,7 m²</dd></div><div><dt>pow. zabudowy</dt><dd>117 m²</dd></div><div><dt>min. działka</dt><dd>21,3 x 17,6 m</dd></div><div><dt>dach</dt><dd>30°</dd></div></dl>
      <div class="cena"><b>509 500 zł</b><span>brutto, prace budowlane</span></div>
-     <a class="zap" href="#kontakt" data-projekt="Likon 100">Zapytaj o ten projekt</a>
+     <a class="zap" href="projekt-likon-100.html">Zobacz projekt <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
    </article>
    <article class="proj" data-m="104.4" data-s="4" data-styl="klas">
-    <button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/p105-1-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 105 - wizualizacja od frontu&quot;}, {&quot;src&quot;: &quot;img/p105-2-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 105 - wizualizacja, druga strona domu&quot;}, {&quot;src&quot;: &quot;img/p105-rzut.webp&quot;, &quot;alt&quot;: &quot;Likon 105 - rzut i wymiary&quot;}]" aria-label="Likon 105: 2 wizualizacje + rzut, powiększ"><img src="img/p105-1-640.webp" srcset="img/p105-1-640.webp 640w, img/p105-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 105 - wizualizacja domu" loading="lazy"><span>2 wizualizacje + rzut</span></button>
+    <a class="zdj" href="projekt-likon-105.html" aria-label="Likon 105 - zobacz projekt"><img src="img/p105-1-640.webp" srcset="img/p105-1-640.webp 640w, img/p105-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 105 - wizualizacja domu" loading="lazy"><span>wizualizacje i rzut</span></a>
     <div class="tx">
-     <h3>Likon 105</h3>
+     <h3><a href="projekt-likon-105.html">Likon 105</a></h3>
      <p class="pok">salon + 4 sypialnie</p>
      <dl><div><dt>pow. netto</dt><dd>104,4 m²</dd></div><div><dt>pow. zabudowy</dt><dd>123 m²</dd></div><div><dt>min. działka</dt><dd>21 x 17 m</dd></div><div><dt>dach</dt><dd>30°</dd></div></dl>
      <div class="cena"><b>510 500 zł</b><span>brutto, prace budowlane</span></div>
-     <a class="zap" href="#kontakt" data-projekt="Likon 105">Zapytaj o ten projekt</a>
+     <a class="zap" href="projekt-likon-105.html">Zobacz projekt <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
    </article>
    <article class="proj" data-m="110" data-s="3" data-styl="klas">
-    <button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/p110-1-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 110 - wizualizacja od frontu&quot;}, {&quot;src&quot;: &quot;img/p110-2-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 110 - wizualizacja, druga strona domu&quot;}, {&quot;src&quot;: &quot;img/p110-rzut.webp&quot;, &quot;alt&quot;: &quot;Likon 110 - rzut i wymiary&quot;}]" aria-label="Likon 110: 2 wizualizacje + rzut, powiększ"><img src="img/p110-1-640.webp" srcset="img/p110-1-640.webp 640w, img/p110-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 110 - wizualizacja domu" loading="lazy"><span>2 wizualizacje + rzut</span></button>
+    <a class="zdj" href="projekt-likon-110.html" aria-label="Likon 110 - zobacz projekt"><img src="img/p110-1-640.webp" srcset="img/p110-1-640.webp 640w, img/p110-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 110 - wizualizacja domu" loading="lazy"><span>wizualizacje i rzut</span></a>
     <div class="tx">
-     <h3>Likon 110</h3>
+     <h3><a href="projekt-likon-110.html">Likon 110</a></h3>
      <p class="pok">salon + 3 sypialnie</p>
      <dl><div><dt>pow. netto</dt><dd>110 m²</dd></div><div><dt>pow. zabudowy</dt><dd>128 m²</dd></div><div><dt>min. działka</dt><dd>21,3 x 17,6 m</dd></div><div><dt>dach</dt><dd>30°</dd></div></dl>
      <div class="cena"><b>512 800 zł</b><span>brutto, prace budowlane</span></div>
-     <a class="zap" href="#kontakt" data-projekt="Likon 110">Zapytaj o ten projekt</a>
+     <a class="zap" href="projekt-likon-110.html">Zobacz projekt <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
    </article>
    <article class="proj" data-m="115" data-s="4" data-styl="klas">
-    <button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/p115-1-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 115 - wizualizacja od frontu&quot;}, {&quot;src&quot;: &quot;img/p115-2-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 115 - wizualizacja, druga strona domu&quot;}, {&quot;src&quot;: &quot;img/p115-rzut.webp&quot;, &quot;alt&quot;: &quot;Likon 115 - rzut i wymiary&quot;}]" aria-label="Likon 115: 2 wizualizacje + rzut, powiększ"><img src="img/p115-1-640.webp" srcset="img/p115-1-640.webp 640w, img/p115-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 115 - wizualizacja domu" loading="lazy"><span>2 wizualizacje + rzut</span></button>
+    <a class="zdj" href="projekt-likon-115.html" aria-label="Likon 115 - zobacz projekt"><img src="img/p115-1-640.webp" srcset="img/p115-1-640.webp 640w, img/p115-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 115 - wizualizacja domu" loading="lazy"><span>wizualizacje i rzut</span></a>
     <div class="tx">
-     <h3>Likon 115</h3>
+     <h3><a href="projekt-likon-115.html">Likon 115</a></h3>
      <p class="pok">salon + 4 sypialnie</p>
      <dl><div><dt>pow. netto</dt><dd>115 m²</dd></div><div><dt>pow. zabudowy</dt><dd>138 m²</dd></div><div><dt>min. działka</dt><dd>22,3 x 16,9 m</dd></div><div><dt>dach</dt><dd>30°</dd></div></dl>
      <div class="cena"><b>541 600 zł</b><span>brutto, prace budowlane</span></div>
-     <a class="zap" href="#kontakt" data-projekt="Likon 115">Zapytaj o ten projekt</a>
+     <a class="zap" href="projekt-likon-115.html">Zobacz projekt <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
    </article>
    <article class="proj" data-m="115" data-s="4" data-styl="modern">
-    <button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/p115m-1-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 115 Modern - wizualizacja od frontu&quot;}, {&quot;src&quot;: &quot;img/p115m-2-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 115 Modern - wizualizacja, druga strona domu&quot;}, {&quot;src&quot;: &quot;img/p115m-rzut.webp&quot;, &quot;alt&quot;: &quot;Likon 115 Modern - rzut i wymiary&quot;}]" aria-label="Likon 115 Modern: 2 wizualizacje + rzut, powiększ"><img src="img/p115m-1-640.webp" srcset="img/p115m-1-640.webp 640w, img/p115m-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 115 Modern - wizualizacja domu" loading="lazy"><span>2 wizualizacje + rzut</span></button>
+    <a class="zdj" href="projekt-likon-115-modern.html" aria-label="Likon 115 Modern - zobacz projekt"><img src="img/p115m-1-640.webp" srcset="img/p115m-1-640.webp 640w, img/p115m-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 115 Modern - wizualizacja domu" loading="lazy"><span>wizualizacje i rzut</span></a>
     <div class="tx">
-     <h3>Likon 115 Modern</h3>
+     <h3><a href="projekt-likon-115-modern.html">Likon 115 Modern</a></h3>
      <p class="pok">salon + 4 sypialnie</p>
      <dl><div><dt>pow. netto</dt><dd>115 m²</dd></div><div><dt>pow. zabudowy</dt><dd>138 m²</dd></div><div><dt>min. działka</dt><dd>22,3 x 16,9 m</dd></div><div><dt>dach</dt><dd>30°</dd></div></dl>
      <div class="cena"><b>548 100 zł</b><span>brutto, prace budowlane</span></div>
-     <a class="zap" href="#kontakt" data-projekt="Likon 115 Modern">Zapytaj o ten projekt</a>
+     <a class="zap" href="projekt-likon-115-modern.html">Zobacz projekt <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
    </article>
    <article class="proj" data-m="116.6" data-s="3" data-styl="modern">
-    <button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/p116m-1-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 116 Modern - wizualizacja od frontu&quot;}, {&quot;src&quot;: &quot;img/p116m-2-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 116 Modern - wizualizacja, druga strona domu&quot;}, {&quot;src&quot;: &quot;img/p116m-rzut.webp&quot;, &quot;alt&quot;: &quot;Likon 116 Modern - rzut i wymiary&quot;}]" aria-label="Likon 116 Modern: 2 wizualizacje + rzut, powiększ"><img src="img/p116m-1-640.webp" srcset="img/p116m-1-640.webp 640w, img/p116m-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 116 Modern - wizualizacja domu" loading="lazy"><span>2 wizualizacje + rzut</span></button>
+    <a class="zdj" href="projekt-likon-116-modern.html" aria-label="Likon 116 Modern - zobacz projekt"><img src="img/p116m-1-640.webp" srcset="img/p116m-1-640.webp 640w, img/p116m-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 116 Modern - wizualizacja domu" loading="lazy"><span>wizualizacje i rzut</span></a>
     <div class="tx">
-     <h3>Likon 116 Modern</h3>
+     <h3><a href="projekt-likon-116-modern.html">Likon 116 Modern</a></h3>
      <p class="pok">salon + 3 sypialnie</p>
      <dl><div><dt>pow. netto</dt><dd>116,6 m²</dd></div><div><dt>pow. zabudowy</dt><dd>140 m²</dd></div><div><dt>min. działka</dt><dd>23,5 x 17 m</dd></div><div><dt>dach</dt><dd>30°</dd></div></dl>
      <div class="cena"><b>560 800 zł</b><span>brutto, prace budowlane</span></div>
-     <a class="zap" href="#kontakt" data-projekt="Likon 116 Modern">Zapytaj o ten projekt</a>
+     <a class="zap" href="projekt-likon-116-modern.html">Zobacz projekt <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
    </article>
    <article class="proj" data-m="120.4" data-s="4" data-styl="klas">
-    <button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/p120-1-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 120 - wizualizacja od frontu&quot;}, {&quot;src&quot;: &quot;img/p120-2-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 120 - wizualizacja, druga strona domu&quot;}, {&quot;src&quot;: &quot;img/p120-rzut.webp&quot;, &quot;alt&quot;: &quot;Likon 120 - rzut i wymiary&quot;}]" aria-label="Likon 120: 2 wizualizacje + rzut, powiększ"><img src="img/p120-1-640.webp" srcset="img/p120-1-640.webp 640w, img/p120-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 120 - wizualizacja domu" loading="lazy"><span>2 wizualizacje + rzut</span></button>
+    <a class="zdj" href="projekt-likon-120.html" aria-label="Likon 120 - zobacz projekt"><img src="img/p120-1-640.webp" srcset="img/p120-1-640.webp 640w, img/p120-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 120 - wizualizacja domu" loading="lazy"><span>wizualizacje i rzut</span></a>
     <div class="tx">
-     <h3>Likon 120</h3>
+     <h3><a href="projekt-likon-120.html">Likon 120</a></h3>
      <p class="pok">salon + 4 sypialnie</p>
      <dl><div><dt>pow. netto</dt><dd>120,4 m²</dd></div><div><dt>pow. zabudowy</dt><dd>135,2 m²</dd></div><div><dt>min. działka</dt><dd>21,95 x 18,05 m</dd></div><div><dt>dach</dt><dd>30°</dd></div></dl>
      <div class="cena"><b>561 600 zł</b><span>brutto, prace budowlane</span></div>
-     <a class="zap" href="#kontakt" data-projekt="Likon 120">Zapytaj o ten projekt</a>
+     <a class="zap" href="projekt-likon-120.html">Zobacz projekt <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
    </article>
    <article class="proj" data-m="121" data-s="3" data-styl="klas">
-    <button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/p120g-1-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 120 G - wizualizacja od frontu&quot;}, {&quot;src&quot;: &quot;img/p120g-2-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 120 G - wizualizacja, druga strona domu&quot;}, {&quot;src&quot;: &quot;img/p120g-rzut.webp&quot;, &quot;alt&quot;: &quot;Likon 120 G - rzut i wymiary&quot;}]" aria-label="Likon 120 G: 2 wizualizacje + rzut, powiększ"><img src="img/p120g-1-640.webp" srcset="img/p120g-1-640.webp 640w, img/p120g-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 120 G - wizualizacja domu" loading="lazy"><span>2 wizualizacje + rzut</span></button>
+    <a class="zdj" href="projekt-likon-120-g.html" aria-label="Likon 120 G - zobacz projekt"><img src="img/p120g-1-640.webp" srcset="img/p120g-1-640.webp 640w, img/p120g-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 120 G - wizualizacja domu" loading="lazy"><span>wizualizacje i rzut</span></a>
     <div class="tx">
-     <h3>Likon 120 G</h3>
-     <p class="pok">salon + 3 sypialnie</p>
+     <h3><a href="projekt-likon-120-g.html">Likon 120 G</a></h3>
+     <p class="pok">salon + 3 sypialnie, z garażem</p>
      <dl><div><dt>pow. netto</dt><dd>121 m²</dd></div><div><dt>pow. zabudowy</dt><dd>145,6 m²</dd></div><div><dt>min. działka</dt><dd>24,8 x 17,6 m</dd></div><div><dt>dach</dt><dd>30°</dd></div></dl>
      <div class="cena"><b>578 900 zł</b><span>brutto, prace budowlane</span></div>
-     <a class="zap" href="#kontakt" data-projekt="Likon 120 G">Zapytaj o ten projekt</a>
+     <a class="zap" href="projekt-likon-120-g.html">Zobacz projekt <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
    </article>
    <article class="proj" data-m="125" data-s="4" data-styl="klas">
-    <button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/p125g-1-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 125 G - wizualizacja od frontu&quot;}, {&quot;src&quot;: &quot;img/p125g-2-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 125 G - wizualizacja, druga strona domu&quot;}, {&quot;src&quot;: &quot;img/p125g-rzut.webp&quot;, &quot;alt&quot;: &quot;Likon 125 G - rzut i wymiary&quot;}]" aria-label="Likon 125 G: 2 wizualizacje + rzut, powiększ"><img src="img/p125g-1-640.webp" srcset="img/p125g-1-640.webp 640w, img/p125g-1-844.webp 844w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 125 G - wizualizacja domu" loading="lazy"><span>2 wizualizacje + rzut</span></button>
+    <a class="zdj" href="projekt-likon-125-g.html" aria-label="Likon 125 G - zobacz projekt"><img src="img/p125g-1-640.webp" srcset="img/p125g-1-640.webp 640w, img/p125g-1-844.webp 844w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="360" alt="Likon 125 G - wizualizacja domu" loading="lazy"><span>wizualizacje i rzut</span></a>
     <div class="tx">
-     <h3>Likon 125 G</h3>
-     <p class="pok">salon + 4 sypialnie</p>
+     <h3><a href="projekt-likon-125-g.html">Likon 125 G</a></h3>
+     <p class="pok">salon + 4 sypialnie, z garażem</p>
      <dl><div><dt>pow. netto</dt><dd>125 m²</dd></div><div><dt>pow. zabudowy</dt><dd>147 m²</dd></div><div><dt>min. działka</dt><dd>24,6 x 17 m</dd></div><div><dt>dach</dt><dd>30°</dd></div></dl>
      <div class="cena"><b>583 900 zł</b><span>brutto, prace budowlane</span></div>
-     <a class="zap" href="#kontakt" data-projekt="Likon 125 G">Zapytaj o ten projekt</a>
+     <a class="zap" href="projekt-likon-125-g.html">Zobacz projekt <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
    </article>
    <article class="proj" data-m="130.6" data-s="3" data-styl="klas">
-    <button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/p130g-1-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 130 G - wizualizacja od frontu&quot;}, {&quot;src&quot;: &quot;img/p130g-2-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 130 G - wizualizacja, druga strona domu&quot;}, {&quot;src&quot;: &quot;img/p130g-rzut.webp&quot;, &quot;alt&quot;: &quot;Likon 130 G - rzut i wymiary&quot;}]" aria-label="Likon 130 G: 2 wizualizacje + rzut, powiększ"><img src="img/p130g-1-640.webp" srcset="img/p130g-1-640.webp 640w, img/p130g-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 130 G - wizualizacja domu" loading="lazy"><span>2 wizualizacje + rzut</span></button>
+    <a class="zdj" href="projekt-likon-130-g.html" aria-label="Likon 130 G - zobacz projekt"><img src="img/p130g-1-640.webp" srcset="img/p130g-1-640.webp 640w, img/p130g-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 130 G - wizualizacja domu" loading="lazy"><span>wizualizacje i rzut</span></a>
     <div class="tx">
-     <h3>Likon 130 G</h3>
-     <p class="pok">salon + 3 sypialnie</p>
+     <h3><a href="projekt-likon-130-g.html">Likon 130 G</a></h3>
+     <p class="pok">salon + 3 sypialnie, z garażem</p>
      <dl><div><dt>pow. netto</dt><dd>130,6 m²</dd></div><div><dt>pow. zabudowy</dt><dd>151 m²</dd></div><div><dt>min. działka</dt><dd>24,8 x 17,6 m</dd></div><div><dt>dach</dt><dd>30°</dd></div></dl>
      <div class="cena"><b>593 300 zł</b><span>brutto, prace budowlane</span></div>
-     <a class="zap" href="#kontakt" data-projekt="Likon 130 G">Zapytaj o ten projekt</a>
+     <a class="zap" href="projekt-likon-130-g.html">Zobacz projekt <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
    </article>
    <article class="proj" data-m="120.2" data-s="4" data-styl="modern">
-    <button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/p120m-1-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 120 Modern - wizualizacja od frontu&quot;}, {&quot;src&quot;: &quot;img/p120m-2-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 120 Modern - wizualizacja, druga strona domu&quot;}, {&quot;src&quot;: &quot;img/p120m-rzut.webp&quot;, &quot;alt&quot;: &quot;Likon 120 Modern - rzut i wymiary&quot;}]" aria-label="Likon 120 Modern: 2 wizualizacje + rzut, powiększ"><img src="img/p120m-1-640.webp" srcset="img/p120m-1-640.webp 640w, img/p120m-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 120 Modern - wizualizacja domu" loading="lazy"><span>2 wizualizacje + rzut</span></button>
+    <a class="zdj" href="projekt-likon-120-modern.html" aria-label="Likon 120 Modern - zobacz projekt"><img src="img/p120m-1-640.webp" srcset="img/p120m-1-640.webp 640w, img/p120m-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 120 Modern - wizualizacja domu" loading="lazy"><span>wizualizacje i rzut</span></a>
     <div class="tx">
-     <h3>Likon 120 Modern</h3>
+     <h3><a href="projekt-likon-120-modern.html">Likon 120 Modern</a></h3>
      <p class="pok">salon + 4 sypialnie</p>
      <dl><div><dt>pow. netto</dt><dd>120,2 m²</dd></div><div><dt>pow. zabudowy</dt><dd>147 m²</dd></div><div><dt>min. działka</dt><dd>24,35 x 16,8 m</dd></div><div><dt>dach</dt><dd>30°</dd></div></dl>
      <div class="cena"><b>633 600 zł</b><span>brutto, prace budowlane</span></div>
-     <a class="zap" href="#kontakt" data-projekt="Likon 120 Modern">Zapytaj o ten projekt</a>
+     <a class="zap" href="projekt-likon-120-modern.html">Zobacz projekt <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
    </article>
    <article class="proj" data-m="144.7" data-s="4" data-styl="klas">
-    <button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/p144g-1-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 144 G - wizualizacja od frontu&quot;}, {&quot;src&quot;: &quot;img/p144g-2-duze.webp&quot;, &quot;alt&quot;: &quot;Likon 144 G - wizualizacja, druga strona domu&quot;}, {&quot;src&quot;: &quot;img/p144g-rzut.webp&quot;, &quot;alt&quot;: &quot;Likon 144 G - rzut i wymiary&quot;}]" aria-label="Likon 144 G: 2 wizualizacje + rzut, powiększ"><img src="img/p144g-1-640.webp" srcset="img/p144g-1-640.webp 640w, img/p144g-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 144 G - wizualizacja domu" loading="lazy"><span>2 wizualizacje + rzut</span></button>
+    <a class="zdj" href="projekt-likon-144-g.html" aria-label="Likon 144 G - zobacz projekt"><img src="img/p144g-1-640.webp" srcset="img/p144g-1-640.webp 640w, img/p144g-1-960.webp 960w" sizes="(max-width: 600px) 84vw, (max-width: 1000px) 44vw, (max-width: 1700px) 30vw, 420px" width="640" height="427" alt="Likon 144 G - wizualizacja domu" loading="lazy"><span>wizualizacje i rzut</span></a>
     <div class="tx">
-     <h3>Likon 144 G</h3>
-     <p class="pok">salon + 4 sypialnie</p>
+     <h3><a href="projekt-likon-144-g.html">Likon 144 G</a></h3>
+     <p class="pok">salon + 4 sypialnie, z garażem</p>
      <dl><div><dt>pow. netto</dt><dd>144,7 m²</dd></div><div><dt>pow. zabudowy</dt><dd>163,1 m²</dd></div><div><dt>min. działka</dt><dd>24,45 x 18,05 m</dd></div><div><dt>dach</dt><dd>30°</dd></div></dl>
      <div class="cena"><b>645 800 zł</b><span>brutto, prace budowlane</span></div>
-     <a class="zap" href="#kontakt" data-projekt="Likon 144 G">Zapytaj o ten projekt</a>
+     <a class="zap" href="projekt-likon-144-g.html">Zobacz projekt <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
    </article>
   </div>
-  <p class="brak" id="brak">Nie mamy gotowego projektu z takim zestawem. Każdy dom możemy dopasować albo zaprojektować indywidualnie, bez opłat: <a href="#kontakt" data-wyc>napisz, czego szukasz</a>.</p>
+  <p class="brak" id="brak">Nie mamy gotowego projektu z takim zestawem. Każdy dom możemy dopasować albo zaprojektować indywidualnie, bez opłat: <a href="kontakt.html#zapytanie">napisz, czego szukasz</a>.</p>
   <div class="wiecej"><button class="btn" type="button" id="wiecej">Pokaż wszystkie projekty (13)</button></div>
   <p class="uwaga">Ceny z cennika LIKON, stan na 23.11.2026. Szczegółowy zakres prac dla każdego projektu jest w karcie projektu (PDF).</p>
  </div>
@@ -537,6 +643,7 @@ footer .dol{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,2
     <li><b>25 lat</b><span>gwarancji na konstrukcję domu w technologii Praefa</span></li>
    </ul>
    <p class="pyt">Jedna ekipa zamiast kilku: od fundamentów po wykończenie, z kosztami znanymi od etapu projektu.</p>
+   <div class="wiecej-l"><a class="btn g" href="technologia-praefa.html">Więcej o technologii Praefa</a></div>
   </div>
   <figure>
    <img src="img/taras-1240.webp" srcset="img/taras-800.webp 800w, img/taras-1240.webp 1240w" sizes="(max-width: 900px) 92vw, 48vw" width="1240" height="692" alt="Dom Likon 115 Modern z drewnianą elewacją i zadaszonym tarasem" loading="lazy">
@@ -565,7 +672,7 @@ footer .dol{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,2
    <li><span class="nr">04</span><span class="kiedy">kilka godzin na ściany</span><h3>Montaż i dach</h3><p>Ściany, kominy z kształtek keramzytowych, więźba, pokrycie dachu, obróbki blacharskie i rynny.</p></li>
    <li><span class="nr">05</span><span class="kiedy">odbiór kluczy</span><h3>Wykończenie</h3><p>Okna, drzwi i brama garażowa, docieplenie ok. 15 cm i elewacja, instalacje z kotłem i grzejnikami, ocieplenie stropów i płyty g-k.</p></li>
   </ol>
-  <div class="os-kon"><p>Klienci piszą o domach postawionych w <b>niespełna siedem tygodni</b> i w <b>5 tygodni plus 5 dni na płytę fundamentową</b>.</p><a class="btn" href="#kontakt" data-wyc>Zapytaj o termin budowy</a></div>
+  <div class="os-kon"><p>Klienci piszą o domach postawionych w <b>niespełna siedem tygodni</b> i w <b>5 tygodni plus 5 dni na płytę fundamentową</b>.</p><a class="btn b" href="budowa-krok-po-kroku.html">Budowa krok po kroku</a></div>
  </div>
 </section>
 
@@ -592,6 +699,7 @@ footer .dol{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,2
    <figure class="opinia"><button class="zdj" type="button" data-zdj="[{&quot;src&quot;: &quot;img/real4-1080.webp&quot;, &quot;alt&quot;: &quot;Dom pod Poznaniem tuż po zakończeniu budowy&quot;}]" aria-label="Powiększ zdjęcie domu"><img src="img/real4-640.webp" srcset="img/real4-640.webp 640w, img/real4-1080.webp 1080w" sizes="(max-width: 700px) 88vw, (max-width: 1300px) 46vw, 560px" width="640" height="275" alt="Dom pod Poznaniem tuż po zakończeniu budowy" loading="lazy"></button>
     <blockquote>Stworzyli nasz dom w 5 tygodni +5 dni płyta fundamentowa. Tempo nie do uwierzenia, zarówno dla nas, rodziny jak i sąsiadów.</blockquote><figcaption>Klienci spod Poznania, budowa zakończona w lipcu 2020</figcaption></figure>
   </div>
+  <div class="wiecej-l"><a class="btn g" href="realizacje.html">Wszystkie realizacje</a></div>
   <p class="fb">Więcej zdjęć z budów: <a href="https://www.facebook.com/likondomy" rel="noopener" target="_blank">LIKON na Facebooku</a></p>
  </div>
 </section>
@@ -601,87 +709,40 @@ footer .dol{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,2
   <aside>
    <svg class="dach" viewBox="0 0 92 30" aria-hidden="true"><path d="M2 22 40 8 66 2 52 14 40 26Z" fill="currentColor"/><path d="M68 4l20 24" stroke="#991E3E" stroke-width="3.2" fill="none"/></svg>
    <h2>O co pytają przed budową</h2>
-   <p class="lead">Najczęstsze pytania o dom z keramzytu. Jeśli czegoś tu brakuje, doradca odpowie przez telefon.</p>
-   <a class="btn" href="tel:+48503781593"><svg><use href="#i-tel"/></svg>503 781 593</a>
+   <p class="lead">Najczęstsze pytania o dom z keramzytu. Pełna lista jest na osobnej stronie.</p>
+   <a class="btn g" href="pytania-i-odpowiedzi.html">Wszystkie pytania</a>
   </aside>
   <div class="lista">
    <details open><summary>Ile trwa budowa domu z keramzytu?</summary><p>Cała budowa zamyka się w około trzech miesiącach i nie trzeba jej przerywać na zimę. Same ściany domu parterowego montujemy w kilka godzin, bo przyjeżdżają gotowe z fabryki.</p></details>
+   <details><summary>Czy budowę trzeba przerywać zimą?</summary><p>Nie. Ściany powstają w zakładach Praefa, a na budowie są tylko montowane, dlatego prace nie muszą być zawieszane w niekorzystnych warunkach, jak przy budowie tradycyjnej.</p></details>
    <details><summary>Czy taki dom jest tak samo trwały jak murowany?</summary><p>Ściany z keramzytu są niepalne i odporne na wilgoć, mróz, pleśń, grzyby i gryzonie. Na konstrukcję domu w technologii Praefa jest do 25 lat gwarancji. System pochodzi ze Skandynawii, gdzie fabryki Praefa działają od 1973 roku.</p></details>
    <details><summary>Czy dom będzie ciepły?</summary><p>Ściana z keramzytu o grubości 18 cm izoluje tak jak 10 cm styropianu, a dodatkowo ocieplamy ją ok. 15 cm styropianu pod elewacją. Keramzyt długo trzyma ciepło, więc temperatura w domu jest równa przez cały rok.</p></details>
    <details><summary>Czy mogę zmienić projekt albo zamówić własny?</summary><p>Tak. Każdy projekt z oferty można dopasować, można też zamówić projekt indywidualny. Projekt wykonujemy bez opłat. Keramzyt da się ciąć i wiercić, więc zmiany są możliwe nawet po wyprodukowaniu ściany.</p></details>
-   <details><summary>Co obejmuje cena projektu z cennika?</summary><p>Cena brutto przy projekcie to koszt prac budowlanych według zakresu opisanego w karcie projektu (PDF). Doradca omówi ten zakres i ewentualne zmiany. Koszty znają Państwo od etapu projektu, bez niespodzianek w trakcie budowy.</p></details>
-   <details><summary>Gdzie budujecie?</summary><p>Centrala i dział sprzedaży są w Krakowie. Doradców regionalnych mamy na Mazowszu, Śląsku oraz w Wielkopolsce i na Dolnym Śląsku. Telefony do nich są niżej, w sekcji kontaktu.</p></details>
+   <details><summary>Co obejmuje cena projektu z cennika?</summary><p>Cena brutto przy projekcie to koszt prac budowlanych według zakresu opisanego w karcie projektu (PDF). Doradca omówi ten zakres i ewentualne zmiany.</p></details>
   </div>
  </div>
 </section>
 
-<section id="kontakt">
+<section class="pas-cta">
  <div class="wrap">
-  <div class="kontakt">
-   <div>
-    <svg class="dach" viewBox="0 0 92 30" aria-hidden="true"><path d="M2 22 40 8 66 2 52 14 40 26Z" fill="currentColor"/><path d="M68 4l20 24" stroke="#991E3E" stroke-width="3.2" fill="none"/></svg>
-    <h2>Porozmawiajmy o Państwa domu</h2>
-    <p class="lead">Prosimy o kilka słów o działce i planach. Doradca oddzwoni, pomoże wybrać projekt i przygotuje wycenę.</p>
-    <div class="dane">
-     <a href="tel:+48503781593"><span>Dział sprzedaży</span><b>503 781 593</b></a>
-     <a href="tel:+48603522204"><span>Dział sprzedaży</span><b>603 522 204</b></a>
-     <a href="mailto:biuro@likon.com.pl"><span>E-mail</span><b>biuro@likon.com.pl</b></a>
-     <div><span>Centrala</span><b>ul. Przewóz 34, 30-716 Kraków</b></div>
-    </div>
-    <div class="doradcy">
-     <h3>Doradcy regionalni</h3>
-     <ul>
-      <li><b>Mazowieckie</b><a href="tel:+48530114338">530 114 338</a><br><a href="mailto:plonsk@likon.com.pl">plonsk@likon.com.pl</a></li>
-      <li><b>Śląskie</b><a href="tel:+48503781593">503 781 593</a><br><a href="mailto:biuro@likon.com.pl">biuro@likon.com.pl</a></li>
-      <li><b>Wielkopolska i Dolny Śląsk</b><a href="tel:+48508087300">508 087 300</a><br><a href="mailto:info@likon.com.pl">info@likon.com.pl</a></li>
-     </ul>
-    </div>
-   </div>
-   <form id="zapytanie" novalidate>
-    <h3>Zapytanie o budowę domu</h3>
-    <p class="info">Odpowiadamy telefonicznie lub mailowo.</p>
-    <label class="p">Imię i nazwisko lub firma<input type="text" name="imie" autocomplete="name"></label>
-    <label>Telefon<input type="tel" name="tel" autocomplete="tel"></label>
-    <label>E-mail<input type="email" name="email" autocomplete="email"></label>
-    <label>Miejsce inwestycji<input type="text" name="miejsce"></label>
-    <label>Województwo<select name="woj"><option>dolnośląskie</option><option>kujawsko-pomorskie</option><option>lubelskie</option><option>lubuskie</option><option>łódzkie</option><option selected>małopolskie</option><option>mazowieckie</option><option>opolskie</option><option>podkarpackie</option><option>podlaskie</option><option>pomorskie</option><option>śląskie</option><option>świętokrzyskie</option><option>warmińsko-mazurskie</option><option>wielkopolskie</option><option>zachodniopomorskie</option></select></label>
-    <label class="p">Projekt<select name="projekt" id="f-projekt"><option>jeszcze nie wiem / projekt indywidualny</option>
-<option>Likon 99</option>
-<option>Likon 100</option>
-<option>Likon 105</option>
-<option>Likon 110</option>
-<option>Likon 115</option>
-<option>Likon 115 Modern</option>
-<option>Likon 116 Modern</option>
-<option>Likon 120</option>
-<option>Likon 120 G</option>
-<option>Likon 125 G</option>
-<option>Likon 130 G</option>
-<option>Likon 120 Modern</option>
-<option>Likon 144 G</option></select></label>
-    <label class="p">Wiadomość<textarea name="wiad"></textarea></label>
-    <button class="btn" type="submit">Wyślij zapytanie</button>
-    <p class="ok" role="status">To podgląd strony: po wdrożeniu formularz będzie wysyłał zapytania na biuro@likon.com.pl.</p>
-   </form>
-  </div>
-  <div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=Przew%C3%B3z+34,+30-716+Krak%C3%B3w&amp;z=15&amp;output=embed">Mapa dojazdu do centrali</div>
+  <div><h2>Porozmawiajmy o Państwa domu</h2><p>Doradca pomoże wybrać projekt, omówi działkę i przygotuje wycenę. Centrala w Krakowie, doradcy na Mazowszu, Śląsku, w Wielkopolsce i na Dolnym Śląsku.</p></div>
+  <div class="ph-cta"><a class="btn" href="kontakt.html#zapytanie">Zapytaj o wycenę</a><a class="btn o" href="tel:+48503781593"><svg><use href="#i-tel"/></svg>503 781 593</a></div>
  </div>
 </section>
 </main>
-
 <footer>
  <div class="wrap">
   <div class="kol">
    <div><b>LIKON</b><span>„tradycyjne” domy w 8 tygodni</span><span>ul. Przewóz 34, 30-716 Kraków</span></div>
    <div><b>Kontakt</b><a href="tel:+48503781593">503 781 593</a><a href="tel:+48603522204">603 522 204</a><a href="mailto:biuro@likon.com.pl">biuro@likon.com.pl</a></div>
-   <div><b>Oferta</b><a href="#projekty">Projekty i ceny</a><a href="#technologia">Technologia Praefa</a><a href="#budowa">Jak budujemy</a><a href="#pytania">Pytania</a></div>
-   <div><b>Informacje</b><a href="#opinie">Realizacje</a><a href="https://www.facebook.com/likondomy" rel="noopener" target="_blank">Facebook</a><a href="#kontakt">Polityka prywatności</a></div>
+   <div><b>Oferta</b><a href="projekty.html">Projekty i ceny</a><a href="technologia-praefa.html">Technologia Praefa</a><a href="budowa-krok-po-kroku.html">Jak budujemy</a><a href="pytania-i-odpowiedzi.html">Pytania i odpowiedzi</a></div>
+   <div><b>Informacje</b><a href="realizacje.html">Realizacje</a><a href="kontakt.html">Kontakt i doradcy</a><a href="https://www.facebook.com/likondomy" rel="noopener" target="_blank">Facebook</a><a href="polityka-prywatnosci.html">Polityka prywatności</a></div>
   </div>
-  <div class="dol"><span>© 2026 LIKON</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=likon.com.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+  <div class="dol"><span>© 2026 LIKON sp. z o.o.</span><span>Domy parterowe z prefabrykatów keramzytowych w systemie Praefa</span></div>
  </div>
 </footer>
 
-<div class="pasek" id="pasek"><a class="btn" href="tel:+48503781593"><svg><use href="#i-tel"/></svg>Zadzwoń</a><a class="btn b" style="background:var(--g);color:#fff" href="#projekty">Projekty i ceny</a></div>
+<div class="pasek" id="pasek"><a class="btn" href="tel:+48503781593"><svg><use href="#i-tel"/></svg>Zadzwoń</a><a class="btn b" style="background:var(--g);color:#fff" href="projekty.html">Projekty i ceny</a></div>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
  <img alt="">
@@ -691,6 +752,9 @@ footer .dol{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,2
  <p class="lic"></p>
 </div>
 
+<div class="cookies" id="cookies" hidden role="region" aria-label="Pliki cookies"><p>Używamy plików cookies niezbędnych do działania strony. Za Państwa zgodą także statystyk i mapy Google. Szczegóły w <a href="polityka-prywatnosci.html">polityce prywatności</a>.</p><button class="btn g" type="button" data-cookies="tak">Akceptuję</button><button class="btn o" type="button" data-cookies="nie">Tylko niezbędne</button></div>
+<script>try{if(!localStorage.getItem('likon-cookies'))document.getElementById('cookies').hidden=false}catch(e){document.getElementById('cookies').hidden=false}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "LIKON sp. z o.o.", "url": "https://likon.com.pl/", "telephone": "+48503781593", "email": "biuro@likon.com.pl", "image": "https://likon.com.pl/img/hero-1280.webp", "address": {"@type": "PostalAddress", "streetAddress": "ul. Przewóz 34", "postalCode": "30-716", "addressLocality": "Kraków", "addressCountry": "PL"}, "sameAs": ["https://www.facebook.com/likondomy"], "description": "Parterowe domy z prefabrykatów keramzytowych w systemie Praefa. Projekt bez opłat, jedna ekipa od płyty fundamentowej po instalacje."}</script>
 <script defer src="app.js"></script>
 </body>
 </html>
